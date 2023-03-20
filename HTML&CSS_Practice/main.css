@@ -14,3 +14,7 @@ img {
   height: 200px;
   margin-bottom: 50px;
 }
+main {
+  border: 5px solid rgb(128, 20, 155);
+  border-radius: 5%;
+}

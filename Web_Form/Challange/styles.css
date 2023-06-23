@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(239, 250, 249);
+    font-family: 'Roboto','Sans-serif';
+}
+h1{
+    text-align: center;
+    margin: 2rem;
+}
+form{
+    width:40rem;
+    margin:auto;
+    background-color: rgb(236, 241, 245);
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0);
+    border-radius: 6px;
+}
+section{
+    margin-bottom: 1rem;
+}
+ul{
+   list-style: none;
+   margin: 0;
+   padding: 0; 
+}
+label{
+    color: rgb(71, 71, 122);
+    margin-bottom: 0.5rem 0;
+    display: block;
+}
+input,
+textarea,
+select{
+    font: inherit;
+    width:100%;
+    display: block;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border: 1px solid rgb(179, 180, 216);
+    border-radius: 4px;
+    padding: 0.5rem;
+    color:rgb(8, 8, 8)
+}
+input:focus,
+textarea:focus{
+    background-color: rgb(219, 190, 253);
+    color: rgb(131, 157, 230);
+    border-color: rgb(165, 153, 236);
+}
+textarea{
+    resize: none;
+}
+.inline-control{
+    display: flex;
+}
+.inline-control label{
+    margin: 0;
+    margin-left: 0.5rem;
+}
+.inline-control input{
+    width: auto;
+
+}
+button{
+    font:inherit;
+    border: 1px solid rgb(51, 67, 100);
+    padding:0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#form-actions{
+    text-align: right;
+
+}
+.btn-filled{
+    background-color: rgb(51, 67, 100);
+    color: white;
+}
+.btn-empty{
+    background-color: transparent;
+    color: rgb(51, 67, 100);
+}
+
+.btn-filled:hover{
+    background-color:rgb(81, 106, 158) ;
+    border-color: rgb(132, 143, 165);
+}
+.btn-empty:hover{
+    background-color: rgb(208,215,230);
+}

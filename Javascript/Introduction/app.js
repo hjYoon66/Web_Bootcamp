@@ -6,10 +6,22 @@ let job={
     place:'Seoul',
     salary:50000
 };
+let totalAdultYears;
+function calculateAdultYears(userAge){
+    return userAge-18;
+}
 
-let adultYears = age-18;
-alert (adultYears);
-
+totalAdultYears=calculateAdultYears(age);
+console.log(totalAdultYears);
 age=45;
-adultYears=age-18;
-alert (adultYears);
+totalAdultYears=calculateAdultYears(age);
+console.log(totalAdultYears);
+
+let person={
+    name:'Yoon',  //Property    
+    greet(){    //Method
+        console.log('Hello!');
+    }
+};
+
+person.greet();

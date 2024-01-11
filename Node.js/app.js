@@ -1,54 +1,54 @@
-const fs = require('fs');
-const path = require('path');
+// Node.js 배우기
+const fs = require("fs");
+const path = require("path");
 
-const express = require('express');
+const express = require("express");
 
 const app = express();
 
-app.use(express.urlencoded({extended:false}));
+app.use(express.urlencoded({ extended: false }));
 
-app.get('/currenttime', function(req, res){
-    res.send('<h1>'+ new Date().toISOString() +'</h1>');
+app.get("/currenttime", function (req, res) {
+  res.send("<h1>" + new Date().toISOString() + "</h1>");
 });
 
-app.get('/',function(req, res){
-    res.send('<form action="/store-user" method="POST"><label>Your Name : </label><input type="text" name="username"><button>Submit</button></form>');
-})
-
-app.post('/store-user', function(req,res){
-    const userName = req.body.username;
-    
-    const filePath = path.join(__dirname, 'data', 'users.json');
-
-    const fileData = fs.readFileSync(filePath);
-    const existingUsers = JSON.parse(fileData);
-
-    existingUsers.push(userName);
-
-    fs.writeFileSync(filePath, JSON.stringify(existingUsers));
-
-    res.send('<h1>Username Stored!<h1>');
+app.get("/", function (req, res) {
+  res.send(
+    '<form action="/store-user" method="POST"><label>Your Name : </label><input type="text" name="username"><button>Submit</button></form>'
+  );
 });
 
-app.get('/users',function(req,res){
-    const filePath = path.join(__dirname, 'data', 'users.json');
+app.post("/store-user", function (req, res) {
+  const userName = req.body.username;
 
-    const fileData = fs.readFileSync(filePath);
-    const existingUsers = JSON.parse(fileData);
+  const filePath = path.join(__dirname, "data", "users.json");
 
-    let responseData = '<ul>';
+  const fileData = fs.readFileSync(filePath);
+  const existingUsers = JSON.parse(fileData);
 
-    for(const user of existingUsers){
-        responseData += '<li>' + user + '</li>';
-    }
-    responseData += '</ul>';
+  existingUsers.push(userName);
 
-    res.send(responseData);
+  fs.writeFileSync(filePath, JSON.stringify(existingUsers));
+
+  res.send("<h1>Username Stored!<h1>");
+});
+
+app.get("/users", function (req, res) {
+  const filePath = path.join(__dirname, "data", "users.json");
+
+  const fileData = fs.readFileSync(filePath);
+  const existingUsers = JSON.parse(fileData);
+
+  let responseData = "<ul>";
+
+  for (const user of existingUsers) {
+    responseData += "<li>" + user + "</li>";
+  }
+  responseData += "</ul>";
+
+  res.send(responseData);
 });
 app.listen(3000);
-
-
-
 
 // function handelRequset(request, response){
 //     if(request.url === '/currenttime'){
@@ -63,4 +63,3 @@ app.listen(3000);
 // const server = http.createServer(handelRequset);
 
 // server.listen(3000);
-

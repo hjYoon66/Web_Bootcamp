@@ -12,7 +12,7 @@
 <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=MongoDB&logoColor=white">
 
 
-## 데이터 엔티티
+## 데이터 엔티티 📚
 ### User
 > email, password, isAdmin, name, address
 

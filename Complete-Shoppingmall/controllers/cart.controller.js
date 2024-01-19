@@ -6,7 +6,6 @@ function getCart(req, res) {
 
 async function addCartItem(req, res, next) {
   let product;
-
   try {
     product = await Product.findById(req.body.productId);
   } catch (error) {

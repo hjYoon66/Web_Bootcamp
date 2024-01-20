@@ -4,7 +4,7 @@ const MongoClient = mongodb.MongoClient;
 
 let database;
 
-async function connectToDatabse() {
+async function connectToDatabase() {
   const client = await MongoClient.connect("mongodb://0.0.0.0:27017");
   database = client.db("online-shop");
 }
@@ -17,6 +17,6 @@ function getDb() {
 }
 
 module.exports = {
-  connectToDatabse: connectToDatabse,
+  connectToDatabase: connectToDatabase,
   getDb: getDb,
 };

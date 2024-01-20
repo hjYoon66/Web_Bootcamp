@@ -54,6 +54,13 @@
 > 관리자는 상품을 등록하고 주문을 pending/fulfilled/cancelled를 통해 주문 관리를 할 수 있음
  <hr>
 
+ ### 오류 페이지
+![401](https://github.com/hjYoon66/Web_Bootcamp/assets/101798354/dcddf6fc-3b18-46f5-a5d9-a379a720cfc0)
+![404](https://github.com/hjYoon66/Web_Bootcamp/assets/101798354/ec09c862-c612-4d19-9f7b-7652c50972cb)
+> 오류들을 검증하여 404, 401, 403, 500 에러들을 처리
+ <hr>
+ 
+
  ## 느낀점 🎤
  * 프론트와 백엔드 파트를 모두 경험할 수 있었던 프로젝트.
  * Node.js와 ejs를 경험.

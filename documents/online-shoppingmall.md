@@ -59,6 +59,13 @@
 ![404](https://github.com/hjYoon66/Web_Bootcamp/assets/101798354/ec09c862-c612-4d19-9f7b-7652c50972cb)
 > 오류들을 검증하여 404, 401, 403, 500 에러들을 처리
  <hr>
+
+ ## Stripe 결제 
+![stripe](https://github.com/hjYoon66/Web_Bootcamp/assets/101798354/91629be6-118f-49d2-9db4-3e04a836a111)
+![stripe success](https://github.com/hjYoon66/Web_Bootcamp/assets/101798354/b5ce441d-8ad8-4bbb-b909-f50f241fea5e)
+> Stripe 패키지를 통해 주문 테스트 진행
+<hr>
+
  
 
  ## 느낀점 🎤

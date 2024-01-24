@@ -27,7 +27,14 @@ Udemy에서 웹 전반적인 이해를 돕기 위해 클론 코딩으로 진행
 15. Authentication & Session
 16. Security
 17. MVC Pattern
+18. Deploy
+19. REST API
+20. CORS(Cross-Origin Resource Sharing)
+21. Frontend Framework(Vue.js)
 
 ## 온라인 쇼핑몰 프로젝트 🛍️
 
 - [온라인 쇼핑몰 프로젝트 요약](./documents/online-shoppingmall.md)
+
+## Todo 프로젝트 📆
+- [Todo 프로젝트 요약](./documents/TodoApp.md)

@@ -14,6 +14,7 @@
 <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=MongoDB&logoColor=white">  
 
 ## 전체 화면 🖥️
+* Save, Edit, Delete 방식을 HTTP Method POST, PATCH, DELETE 메서드를 이용하여 구현
 ![Todoapp](https://github.com/hjYoon66/Web_Bootcamp/assets/101798354/00ebb933-1462-4ac6-b7a8-f530d7ed19fa)
 ![TodoSave](https://github.com/hjYoon66/Web_Bootcamp/assets/101798354/0478d8c4-32ab-4c5e-9fbc-6371d7823955)
 ![Tododelete](https://github.com/hjYoon66/Web_Bootcamp/assets/101798354/8c527e1c-08ee-4938-950b-480c15eb193b)
